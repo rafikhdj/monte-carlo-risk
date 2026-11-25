@@ -1,0 +1,968 @@
+{
+  "repeats": 100,
+  "budgets": [
+    128,
+    512,
+    2048,
+    8192
+  ],
+  "exact_seed": 310000,
+  "cpu_seed": 710000,
+  "python": "3.14.0",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "models": {
+    "linéaire": {
+      "d": 1,
+      "reference": 0.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.027,
+          "sizes": {
+            "MC": 4128,
+            "Direct": 1210,
+            "Antithétique": 6948,
+            "Sobol": 128,
+            "Projection Neyman": 78,
+            "Scission iid": 1976,
+            "LHS k2": 190,
+            "LHS k4": 126,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 318,
+            "LHS k2 remise": 190,
+            "Grille k2": 64,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.038,
+          "sizes": {
+            "MC": 7076,
+            "Direct": 2104,
+            "Antithétique": 11794,
+            "Sobol": 128,
+            "Projection Neyman": 78,
+            "Scission iid": 3314,
+            "LHS k2": 446,
+            "LHS k4": 254,
+            "LHS k8": 126,
+            "LHS k16": 64,
+            "LHS k2 antith.": 860,
+            "LHS k2 remise": 478,
+            "Grille k2": 286,
+            "Grille k2 Neyman": 64
+          }
+        }
+      }
+    },
+    "carré": {
+      "d": 1,
+      "reference": 1.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.022,
+          "sizes": {
+            "MC": 3124,
+            "Direct": 828,
+            "Antithétique": 4654,
+            "Sobol": 128,
+            "Projection Neyman": 64,
+            "Scission iid": 1338,
+            "LHS k2": 126,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 158,
+            "LHS k2 remise": 78,
+            "Grille k2": 64,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.042,
+          "sizes": {
+            "MC": 7714,
+            "Direct": 2486,
+            "Antithétique": 12814,
+            "Sobol": 128,
+            "Projection Neyman": 78,
+            "Scission iid": 3634,
+            "LHS k2": 542,
+            "LHS k4": 286,
+            "LHS k8": 142,
+            "LHS k16": 78,
+            "LHS k2 antith.": 956,
+            "LHS k2 remise": 558,
+            "Grille k2": 382,
+            "Grille k2 Neyman": 64
+          }
+        }
+      }
+    },
+    "exponentielle": {
+      "d": 1,
+      "reference": 1.6487212707001282,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.023,
+          "sizes": {
+            "MC": 2040,
+            "Direct": 764,
+            "Antithétique": 2104,
+            "Sobol": 128,
+            "Projection Neyman": 94,
+            "Scission iid": 956,
+            "LHS k2": 126,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 190,
+            "LHS k2 remise": 78,
+            "Grille k2": 78,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.042,
+          "sizes": {
+            "MC": 4144,
+            "Direct": 2104,
+            "Antithétique": 5164,
+            "Sobol": 128,
+            "Projection Neyman": 94,
+            "Scission iid": 2358,
+            "LHS k2": 478,
+            "LHS k4": 270,
+            "LHS k8": 158,
+            "LHS k16": 78,
+            "LHS k2 antith.": 796,
+            "LHS k2 remise": 494,
+            "Grille k2": 350,
+            "Grille k2 Neyman": 78
+          }
+        }
+      }
+    },
+    "sinus": {
+      "d": 1,
+      "reference": 0.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.026,
+          "sizes": {
+            "MC": 2088,
+            "Direct": 876,
+            "Antithétique": 2868,
+            "Sobol": 64,
+            "Projection Neyman": 94,
+            "Scission iid": 1020,
+            "LHS k2": 158,
+            "LHS k4": 94,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 254,
+            "LHS k2 remise": 126,
+            "Grille k2": 94,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.044,
+          "sizes": {
+            "MC": 4000,
+            "Direct": 2104,
+            "Antithétique": 6056,
+            "Sobol": 128,
+            "Projection Neyman": 94,
+            "Scission iid": 2230,
+            "LHS k2": 510,
+            "LHS k4": 286,
+            "LHS k8": 158,
+            "LHS k16": 78,
+            "LHS k2 antith.": 828,
+            "LHS k2 remise": 526,
+            "Grille k2": 318,
+            "Grille k2 Neyman": 64
+          }
+        }
+      }
+    },
+    "call": {
+      "d": 1,
+      "reference": 0.1311669178721533,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.022,
+          "sizes": {
+            "MC": 2614,
+            "Direct": 700,
+            "Antithétique": 4144,
+            "Sobol": 256,
+            "Projection Neyman": 64,
+            "Scission iid": 1338,
+            "LHS k2": 110,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 126,
+            "LHS k2 remise": 78,
+            "Grille k2": 94,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.039,
+          "sizes": {
+            "MC": 6438,
+            "Direct": 2104,
+            "Antithétique": 10264,
+            "Sobol": 256,
+            "Projection Neyman": 78,
+            "Scission iid": 3124,
+            "LHS k2": 446,
+            "LHS k4": 254,
+            "LHS k8": 126,
+            "LHS k16": 64,
+            "LHS k2 antith.": 828,
+            "LHS k2 remise": 446,
+            "Grille k2": 286,
+            "Grille k2 Neyman": 64
+          }
+        }
+      }
+    },
+    "événement rare": {
+      "d": 1,
+      "reference": 0.004024588542758305,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.024,
+          "sizes": {
+            "MC": 3124,
+            "Direct": 892,
+            "Antithétique": 4654,
+            "Sobol": 128,
+            "Projection Neyman": 64,
+            "Scission iid": 1530,
+            "LHS k2": 126,
+            "LHS k4": 94,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 254,
+            "LHS k2 remise": 94,
+            "Grille k2": 94,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.041,
+          "sizes": {
+            "MC": 6694,
+            "Direct": 2230,
+            "Antithétique": 10646,
+            "Sobol": 256,
+            "Projection Neyman": 64,
+            "Scission iid": 3250,
+            "LHS k2": 446,
+            "LHS k4": 254,
+            "LHS k8": 142,
+            "LHS k16": 78,
+            "LHS k2 antith.": 892,
+            "LHS k2 remise": 510,
+            "Grille k2": 318,
+            "Grille k2 Neyman": 64
+          }
+        }
+      }
+    },
+    "pics multiples": {
+      "d": 1,
+      "reference": 0.1053678042418988,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.029,
+          "sizes": {
+            "MC": 1530,
+            "Direct": 604,
+            "Antithétique": 1720,
+            "Sobol": 256,
+            "Projection Neyman": 64,
+            "Scission iid": 558,
+            "LHS k2": 142,
+            "LHS k4": 78,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 78,
+            "LHS k2 remise": 64,
+            "Grille k2": 64,
+            "Grille k2 Neyman": 78
+          }
+        },
+        "2048": {
+          "target_ms": 0.055,
+          "sizes": {
+            "MC": 4144,
+            "Direct": 2104,
+            "Antithétique": 4780,
+            "Sobol": 128,
+            "Projection Neyman": 78,
+            "Scission iid": 2740,
+            "LHS k2": 478,
+            "LHS k4": 350,
+            "LHS k8": 190,
+            "LHS k16": 94,
+            "LHS k2 antith.": 1084,
+            "LHS k2 remise": 636,
+            "Grille k2": 510,
+            "Grille k2 Neyman": 64
+          }
+        }
+      }
+    },
+    "additif 2D": {
+      "d": 2,
+      "reference": 1.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.034,
+          "sizes": {
+            "MC": 1720,
+            "Direct": 860,
+            "Projection": 574,
+            "LHS": 350,
+            "LHS projeté": 254,
+            "Antithétique": 2104,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 64,
+            "Scission iid": 972,
+            "LHS k2": 110,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 158,
+            "LHS k2 remise": 94,
+            "Grille k2": 64,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.076,
+          "sizes": {
+            "MC": 4876,
+            "Direct": 2804,
+            "Projection": 2072,
+            "LHS": 1242,
+            "LHS projeté": 1068,
+            "Antithétique": 6566,
+            "Sobol": 128,
+            "Sobol projeté": 128,
+            "Projection Neyman": 574,
+            "Scission iid": 2804,
+            "LHS k2": 446,
+            "LHS k4": 270,
+            "LHS k8": 142,
+            "LHS k16": 78,
+            "LHS k2 antith.": 796,
+            "LHS k2 remise": 494,
+            "Grille k2": 780,
+            "Grille k2 Neyman": 318
+          }
+        }
+      }
+    },
+    "projection 2D": {
+      "d": 2,
+      "reference": 1.6487212707001282,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.037,
+          "sizes": {
+            "MC": 1720,
+            "Direct": 892,
+            "Projection": 668,
+            "LHS": 382,
+            "LHS projeté": 286,
+            "Antithétique": 1976,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 64,
+            "Scission iid": 924,
+            "LHS k2": 126,
+            "LHS k4": 78,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 190,
+            "LHS k2 remise": 126,
+            "Grille k2": 110,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.08,
+          "sizes": {
+            "MC": 4080,
+            "Direct": 2614,
+            "Projection": 2072,
+            "LHS": 1210,
+            "LHS projeté": 1052,
+            "Antithétique": 5100,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 636,
+            "Scission iid": 2486,
+            "LHS k2": 478,
+            "LHS k4": 270,
+            "LHS k8": 142,
+            "LHS k16": 78,
+            "LHS k2 antith.": 796,
+            "LHS k2 remise": 510,
+            "Grille k2": 828,
+            "Grille k2 Neyman": 366
+          }
+        }
+      }
+    },
+    "interactions 2D": {
+      "d": 2,
+      "reference": 0.23692775868212176,
+      "direction": "pair",
+      "cpu": {
+        "512": {
+          "target_ms": 0.051,
+          "sizes": {
+            "MC": 1466,
+            "Direct": 828,
+            "Projection": 700,
+            "LHS": 430,
+            "LHS projeté": 350,
+            "Antithétique": 1720,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 64,
+            "Scission iid": 924,
+            "LHS k2": 158,
+            "LHS k4": 94,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 254,
+            "LHS k2 remise": 158,
+            "Grille k2": 174,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.1,
+          "sizes": {
+            "MC": 3378,
+            "Direct": 2358,
+            "Projection": 2072,
+            "LHS": 1274,
+            "LHS projeté": 1146,
+            "Antithétique": 4080,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 636,
+            "Scission iid": 2326,
+            "LHS k2": 542,
+            "LHS k4": 318,
+            "LHS k8": 174,
+            "LHS k16": 94,
+            "LHS k2 antith.": 892,
+            "LHS k2 remise": 574,
+            "Grille k2": 892,
+            "Grille k2 Neyman": 318
+          }
+        }
+      }
+    },
+    "additif 5D": {
+      "d": 5,
+      "reference": 1.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.045,
+          "sizes": {
+            "MC": 1274,
+            "Direct": 764,
+            "Projection": 574,
+            "LHS": 270,
+            "LHS projeté": 222,
+            "Antithétique": 1912,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 64,
+            "Scission iid": 668,
+            "LHS k2": 94,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 174,
+            "LHS k2 remise": 94,
+            "Grille k2": 174,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.119,
+          "sizes": {
+            "MC": 4048,
+            "Direct": 2644,
+            "Projection": 2104,
+            "LHS": 940,
+            "LHS projeté": 844,
+            "Antithétique": 6214,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1210,
+            "Scission iid": 2134,
+            "LHS k2": 382,
+            "LHS k4": 206,
+            "LHS k8": 110,
+            "LHS k16": 64,
+            "LHS k2 antith.": 732,
+            "LHS k2 remise": 462,
+            "Grille k2": 1130,
+            "Grille k2 Neyman": 828
+          }
+        }
+      }
+    },
+    "projection 5D": {
+      "d": 5,
+      "reference": 1.6487212707001282,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.047,
+          "sizes": {
+            "MC": 1274,
+            "Direct": 796,
+            "Projection": 620,
+            "LHS": 270,
+            "LHS projeté": 238,
+            "Antithétique": 1784,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 78,
+            "Scission iid": 668,
+            "LHS k2": 110,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 174,
+            "LHS k2 remise": 110,
+            "Grille k2": 222,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.12,
+          "sizes": {
+            "MC": 3728,
+            "Direct": 2486,
+            "Projection": 2104,
+            "LHS": 924,
+            "LHS projeté": 828,
+            "Antithétique": 5322,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1130,
+            "Scission iid": 2008,
+            "LHS k2": 398,
+            "LHS k4": 206,
+            "LHS k8": 110,
+            "LHS k16": 64,
+            "LHS k2 antith.": 700,
+            "LHS k2 remise": 446,
+            "Grille k2": 1114,
+            "Grille k2 Neyman": 796
+          }
+        }
+      }
+    },
+    "interactions 5D": {
+      "d": 5,
+      "reference": 0.23692775868212176,
+      "direction": "pair",
+      "cpu": {
+        "512": {
+          "target_ms": 0.079,
+          "sizes": {
+            "MC": 1020,
+            "Direct": 700,
+            "Projection": 574,
+            "LHS": 350,
+            "LHS projeté": 318,
+            "Antithétique": 1322,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 64,
+            "Scission iid": 652,
+            "LHS k2": 174,
+            "LHS k4": 94,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 270,
+            "LHS k2 remise": 174,
+            "Grille k2": 318,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.214,
+          "sizes": {
+            "MC": 2964,
+            "Direct": 2326,
+            "Projection": 2088,
+            "LHS": 1226,
+            "LHS projeté": 1146,
+            "Antithétique": 3888,
+            "Sobol": 128,
+            "Sobol projeté": 128,
+            "Projection Neyman": 1498,
+            "Scission iid": 2072,
+            "LHS k2": 636,
+            "LHS k4": 366,
+            "LHS k8": 190,
+            "LHS k16": 94,
+            "LHS k2 antith.": 1068,
+            "LHS k2 remise": 732,
+            "Grille k2": 1434,
+            "Grille k2 Neyman": 1178
+          }
+        }
+      }
+    },
+    "additif 10D": {
+      "d": 10,
+      "reference": 1.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.059,
+          "sizes": {
+            "MC": 988,
+            "Direct": 732,
+            "Projection": 574,
+            "LHS": 190,
+            "LHS projeté": 174,
+            "Antithétique": 1530,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 574,
+            "Scission iid": 462,
+            "LHS k2": 64,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 142,
+            "LHS k2 remise": 94,
+            "Grille k2": 270,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.169,
+          "sizes": {
+            "MC": 3124,
+            "Direct": 2422,
+            "Projection": 2104,
+            "LHS": 668,
+            "LHS projeté": 652,
+            "Antithétique": 5004,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1482,
+            "Scission iid": 1578,
+            "LHS k2": 318,
+            "LHS k4": 158,
+            "LHS k8": 78,
+            "LHS k16": 64,
+            "LHS k2 antith.": 588,
+            "LHS k2 remise": 366,
+            "Grille k2": 1338,
+            "Grille k2 Neyman": 1084
+          }
+        }
+      }
+    },
+    "projection 10D": {
+      "d": 10,
+      "reference": 1.6487212707001282,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.056,
+          "sizes": {
+            "MC": 908,
+            "Direct": 636,
+            "Projection": 526,
+            "LHS": 174,
+            "LHS projeté": 158,
+            "Antithétique": 1402,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 64,
+            "Scission iid": 446,
+            "LHS k2": 78,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 142,
+            "LHS k2 remise": 78,
+            "Grille k2": 254,
+            "Grille k2 Neyman": 64
+          }
+        },
+        "2048": {
+          "target_ms": 0.166,
+          "sizes": {
+            "MC": 3060,
+            "Direct": 2358,
+            "Projection": 2056,
+            "LHS": 684,
+            "LHS projeté": 636,
+            "Antithétique": 4780,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1386,
+            "Scission iid": 1562,
+            "LHS k2": 318,
+            "LHS k4": 158,
+            "LHS k8": 78,
+            "LHS k16": 64,
+            "LHS k2 antith.": 574,
+            "LHS k2 remise": 366,
+            "Grille k2": 1306,
+            "Grille k2 Neyman": 1068
+          }
+        }
+      }
+    },
+    "interactions 10D": {
+      "d": 10,
+      "reference": 0.23692775868212176,
+      "direction": "pair",
+      "cpu": {
+        "512": {
+          "target_ms": 0.111,
+          "sizes": {
+            "MC": 812,
+            "Direct": 636,
+            "Projection": 558,
+            "LHS": 302,
+            "LHS projeté": 286,
+            "Antithétique": 1068,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 238,
+            "Scission iid": 526,
+            "LHS k2": 158,
+            "LHS k4": 78,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 254,
+            "LHS k2 remise": 174,
+            "Grille k2": 398,
+            "Grille k2 Neyman": 206
+          }
+        },
+        "2048": {
+          "target_ms": 0.329,
+          "sizes": {
+            "MC": 2550,
+            "Direct": 2230,
+            "Projection": 2056,
+            "LHS": 1068,
+            "LHS projeté": 1020,
+            "Antithétique": 3346,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1720,
+            "Scission iid": 1816,
+            "LHS k2": 558,
+            "LHS k4": 318,
+            "LHS k8": 174,
+            "LHS k16": 78,
+            "LHS k2 antith.": 892,
+            "LHS k2 remise": 652,
+            "Grille k2": 1594,
+            "Grille k2 Neyman": 1466
+          }
+        }
+      }
+    },
+    "additif 20D": {
+      "d": 20,
+      "reference": 1.0,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.089,
+          "sizes": {
+            "MC": 844,
+            "Direct": 684,
+            "Projection": 574,
+            "LHS": 174,
+            "LHS projeté": 158,
+            "Antithétique": 1402,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 254,
+            "Scission iid": 414,
+            "LHS k2": 78,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 142,
+            "LHS k2 remise": 94,
+            "Grille k2": 366,
+            "Grille k2 Neyman": 190
+          }
+        },
+        "2048": {
+          "target_ms": 0.276,
+          "sizes": {
+            "MC": 2836,
+            "Direct": 2406,
+            "Projection": 2072,
+            "LHS": 620,
+            "LHS projeté": 588,
+            "Antithétique": 4654,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1720,
+            "Scission iid": 1418,
+            "LHS k2": 286,
+            "LHS k4": 142,
+            "LHS k8": 78,
+            "LHS k16": 64,
+            "LHS k2 antith.": 558,
+            "LHS k2 remise": 350,
+            "Grille k2": 1594,
+            "Grille k2 Neyman": 1450
+          }
+        }
+      }
+    },
+    "projection 20D": {
+      "d": 20,
+      "reference": 1.6487212707001282,
+      "direction": "sum",
+      "cpu": {
+        "512": {
+          "target_ms": 0.088,
+          "sizes": {
+            "MC": 828,
+            "Direct": 668,
+            "Projection": 558,
+            "LHS": 174,
+            "LHS projeté": 158,
+            "Antithétique": 1370,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 238,
+            "Scission iid": 398,
+            "LHS k2": 78,
+            "LHS k4": 64,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 142,
+            "LHS k2 remise": 94,
+            "Grille k2": 366,
+            "Grille k2 Neyman": 190
+          }
+        },
+        "2048": {
+          "target_ms": 0.271,
+          "sizes": {
+            "MC": 2772,
+            "Direct": 2358,
+            "Projection": 2072,
+            "LHS": 604,
+            "LHS projeté": 574,
+            "Antithétique": 4638,
+            "Sobol": 64,
+            "Sobol projeté": 128,
+            "Projection Neyman": 1608,
+            "Scission iid": 1354,
+            "LHS k2": 286,
+            "LHS k4": 142,
+            "LHS k8": 78,
+            "LHS k16": 64,
+            "LHS k2 antith.": 542,
+            "LHS k2 remise": 350,
+            "Grille k2": 1562,
+            "Grille k2 Neyman": 1402
+          }
+        }
+      }
+    },
+    "interactions 20D": {
+      "d": 20,
+      "reference": 0.23692775868212176,
+      "direction": "pair",
+      "cpu": {
+        "512": {
+          "target_ms": 0.181,
+          "sizes": {
+            "MC": 700,
+            "Direct": 620,
+            "Projection": 574,
+            "LHS": 270,
+            "LHS projeté": 270,
+            "Antithétique": 1004,
+            "Sobol": 64,
+            "Sobol projeté": 64,
+            "Projection Neyman": 382,
+            "Scission iid": 478,
+            "LHS k2": 142,
+            "LHS k4": 78,
+            "LHS k8": 64,
+            "LHS k16": 64,
+            "LHS k2 antith.": 254,
+            "LHS k2 remise": 174,
+            "Grille k2": 462,
+            "Grille k2 Neyman": 334
+          }
+        },
+        "2048": {
+          "target_ms": 0.573,
+          "sizes": {
+            "MC": 2422,
+            "Direct": 2214,
+            "Projection": 1976,
+            "LHS": 972,
+            "LHS projeté": 940,
+            "Antithétique": 2916,
+            "Sobol": 128,
+            "Sobol projeté": 64,
+            "Projection Neyman": 1848,
+            "Scission iid": 1688,
+            "LHS k2": 542,
+            "LHS k4": 302,
+            "LHS k8": 158,
+            "LHS k16": 78,
+            "LHS k2 antith.": 924,
+            "LHS k2 remise": 636,
+            "Grille k2": 1800,
+            "Grille k2 Neyman": 1688
+          }
+        }
+      }
+    }
+  }
+}
