@@ -1,0 +1,3712 @@
+{
+  "host": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.0",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "repeats": 40,
+  "ref_power": 21,
+  "budgets": [
+    512,
+    2048,
+    8192
+  ],
+  "time_anchors": [
+    2048,
+    8192
+  ],
+  "models": {
+    "normal": {
+      "reference": {
+        "value": [
+          2.3263478740408408,
+          2.665214220345806
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "kind": "analytique"
+      },
+      "calibration": {
+        "grids": {
+          "uniform": {
+            "width": 5.0,
+            "scores": [
+              [
+                1.1119703217659128e-34,
+                4.0
+              ],
+              [
+                7.28876967364579e-36,
+                5.0
+              ],
+              [
+                1.4819559566465798e-35,
+                6.0
+              ]
+            ]
+          },
+          "quantile": {
+            "width": 6.0,
+            "scores": [
+              [
+                7.840353294356423e-31,
+                4.0
+              ],
+              [
+                4.344518978271203e-31,
+                5.0
+              ],
+              [
+                3.21638582148111e-31,
+                6.0
+              ]
+            ]
+          },
+          "tail": {
+            "width": 5.0,
+            "scores": [
+              [
+                3.030503906491299e-33,
+                4.0
+              ],
+              [
+                2.2807797519205135e-33,
+                5.0
+              ],
+              [
+                1.1141977394699119e-32,
+                6.0
+              ]
+            ]
+          },
+          "adaptive": {
+            "width": 6.0,
+            "scores": [
+              [
+                1.7008387261534532e-34,
+                4.0
+              ],
+              [
+                2.4841754992393102e-33,
+                5.0
+              ],
+              [
+                1.061789581103715e-35,
+                6.0
+              ]
+            ]
+          }
+        },
+        "candidates": {
+          "IS": [
+            {
+              "score": 5.976408036299584e-05,
+              "sampler": "is",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 4.807229763354852e-05,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 4.536114016588681e-05,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "IS + strat.": [
+            {
+              "score": 2.4262183700085495e-07,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 6.559813546648091e-08,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 8.623053711686201e-08,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "Spline uniforme": [
+            {
+              "score": 0.0005096918030413832,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0002907459037176212,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00021859521592638956,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline quantiles": [
+            {
+              "score": 0.0005268258335382688,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0003113393069161146,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0002314794546233215,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline queue": [
+            {
+              "score": 0.0004892918193418199,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0002746333614595584,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00020215731192049687,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline adaptative": [
+            {
+              "score": 0.0008492161606997422,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0004452788013191221,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00030506799190650475,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + strat.": [
+            {
+              "score": 2.3542838132971338e-06,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 4.1193875236987287e-07,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 2.850038607181741e-07,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS": [
+            {
+              "score": 0.00012773624835964626,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 5.7916831908432264e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 7.979755026586337e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.00011845753694173894,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 7.098935313561547e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00011356227700771048,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0001766994676003824,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 6.658389423009395e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 4.9205743599906795e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS + strat.": [
+            {
+              "score": 9.056624419487879e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 2.389308191811412e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 3.231953459881774e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 4.796894422804111e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 2.3907615387474515e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 9.38721485446877e-09,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 2.4808494967278884e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 2.950618846291675e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 1.3133561839771462e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + scindées": [
+            {
+              "score": 0.0005609390844634406,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00021983246225028248,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0003265079089008594,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline seule": [
+            {
+              "score": 2.079053073074902e-06,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": false
+            },
+            {
+              "score": 3.1693135946809987e-07,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": false
+            },
+            {
+              "score": 2.65768737891831e-07,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": false
+            }
+          ]
+        },
+        "selected": {
+          "MC": {
+            "sampler": "mc",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS": {
+            "sampler": "is",
+            "grid": "",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Spline uniforme": {
+            "sampler": "mc",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline quantiles": {
+            "sampler": "mc",
+            "grid": "quantile",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline queue": {
+            "sampler": "mc",
+            "grid": "tail",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline adaptative": {
+            "sampler": "mc",
+            "grid": "adaptive",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + strat.": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS": {
+            "sampler": "is",
+            "grid": "uniform",
+            "shift": 1.35,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + scindées": {
+            "sampler": "split",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline seule": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": false
+          },
+          "Spline + scindées + strat.": {
+            "sampler": "split_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          }
+        }
+      },
+      "target_ms": {
+        "2048": 0.034875,
+        "8192": 0.101333
+      },
+      "calibration_seconds": 0.799256791,
+      "reference_seconds": 0.000210375,
+      "matching_seconds": 1.933006125,
+      "decomposition_bridge": {
+        "exact:512": {
+          "n": 512,
+          "parent_median_ms": 0.266646,
+          "triple_median_ms": 0.286563
+        },
+        "exact:2048": {
+          "n": 2048,
+          "parent_median_ms": 0.48049949999999997,
+          "triple_median_ms": 0.5622499999999999
+        },
+        "exact:8192": {
+          "n": 8192,
+          "parent_median_ms": 1.347167,
+          "triple_median_ms": 1.658667
+        },
+        "temps:2048": {
+          "n": 128,
+          "parent_median_ms": 0.21087450000000002,
+          "triple_median_ms": 0.217937
+        },
+        "temps:8192": {
+          "n": 128,
+          "parent_median_ms": 0.20906249999999998,
+          "triple_median_ms": 0.2141455
+        }
+      }
+    },
+    "student": {
+      "reference": {
+        "value": [
+          3.364929998907217,
+          4.452429111817969
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "kind": "analytique"
+      },
+      "calibration": {
+        "grids": {
+          "uniform": {
+            "width": 6.0,
+            "scores": [
+              [
+                2.420504231180049,
+                4.0
+              ],
+              [
+                0.6236202561576408,
+                5.0
+              ],
+              [
+                0.00140257615201819,
+                6.0
+              ]
+            ]
+          },
+          "quantile": {
+            "width": 5.0,
+            "scores": [
+              [
+                2.829825101758889,
+                4.0
+              ],
+              [
+                1.4798560792806408,
+                5.0
+              ],
+              [
+                6.02772989171796,
+                6.0
+              ]
+            ]
+          },
+          "tail": {
+            "width": 6.0,
+            "scores": [
+              [
+                2.4118711634853307,
+                4.0
+              ],
+              [
+                0.6133676902933156,
+                5.0
+              ],
+              [
+                0.0009961616644614032,
+                6.0
+              ]
+            ]
+          },
+          "adaptive": {
+            "width": 6.0,
+            "scores": [
+              [
+                2.4129221224664867,
+                4.0
+              ],
+              [
+                0.6147117654049545,
+                5.0
+              ],
+              [
+                0.0010513967778191418,
+                6.0
+              ]
+            ]
+          }
+        },
+        "candidates": {
+          "IS": [
+            {
+              "score": 0.0004708838090725223,
+              "sampler": "is",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.00032871919410913794,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.0002917431467659584,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "IS + strat.": [
+            {
+              "score": 2.15591279466845e-06,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 4.4967257024194547e-07,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 5.419557217694898e-07,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "Spline uniforme": [
+            {
+              "score": 0.004671321256087064,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.002240435894231576,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.001380220586739901,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline quantiles": [
+            {
+              "score": 0.004300546232792128,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0030952780911777584,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.006382251158480124,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline queue": [
+            {
+              "score": 0.004600866118230191,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.002177341247652483,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0013155264566515358,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline adaptative": [
+            {
+              "score": 0.00584136657894742,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0026930224658546107,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0014986459930223365,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + strat.": [
+            {
+              "score": 0.00013418446974466564,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 1.3023412193480996e-05,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 2.639949453572148e-05,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS": [
+            {
+              "score": 0.0005840776882802815,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00023877396387243826,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0002650829568967956,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.00048382732559809985,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0002731945226909219,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0003802822447917079,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0006933221748939779,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00024254853586581272,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00017748302543119378,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS + strat.": [
+            {
+              "score": 3.601294418340551e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 8.475764637900507e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 1.0482059274999952e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 1.9167627228587654e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 8.4755251949569e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 5.332071004235176e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 1.0659544432041297e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 1.0585150882034052e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 4.189551739121524e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + scindées": [
+            {
+              "score": 0.004703127500148344,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0021376123929497466,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00185499750808844,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline seule": [
+            {
+              "score": 5.469138750548174e-05,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": false
+            },
+            {
+              "score": 6.1421017470703305e-06,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": false
+            },
+            {
+              "score": 1.4882523611714363e-05,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": false
+            }
+          ]
+        },
+        "selected": {
+          "MC": {
+            "sampler": "mc",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS": {
+            "sampler": "is",
+            "grid": "",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Spline uniforme": {
+            "sampler": "mc",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline quantiles": {
+            "sampler": "mc",
+            "grid": "quantile",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline queue": {
+            "sampler": "mc",
+            "grid": "tail",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline adaptative": {
+            "sampler": "mc",
+            "grid": "adaptive",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + strat.": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline + IS": {
+            "sampler": "is",
+            "grid": "uniform",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "uniform",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + scindées": {
+            "sampler": "split",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline seule": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": false
+          },
+          "Spline + scindées + strat.": {
+            "sampler": "split_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          }
+        }
+      },
+      "target_ms": {
+        "2048": 0.055708,
+        "8192": 0.168375
+      },
+      "calibration_seconds": 1.195844209,
+      "reference_seconds": 0.000206041,
+      "matching_seconds": 2.562424375,
+      "decomposition_bridge": {
+        "exact:512": {
+          "n": 512,
+          "parent_median_ms": 0.3336665,
+          "triple_median_ms": 0.345354
+        },
+        "exact:2048": {
+          "n": 2048,
+          "parent_median_ms": 0.7196875,
+          "triple_median_ms": 0.761063
+        },
+        "exact:8192": {
+          "n": 8192,
+          "parent_median_ms": 2.272729,
+          "triple_median_ms": 2.42425
+        },
+        "temps:2048": {
+          "n": 128,
+          "parent_median_ms": 0.2375,
+          "triple_median_ms": 0.241375
+        },
+        "temps:8192": {
+          "n": 128,
+          "parent_median_ms": 0.237063,
+          "triple_median_ms": 0.241062
+        }
+      }
+    },
+    "mixture": {
+      "reference": {
+        "value": [
+          5.151100544905698,
+          5.927583469136256
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "kind": "analytique"
+      },
+      "calibration": {
+        "grids": {
+          "uniform": {
+            "width": 5.0,
+            "scores": [
+              [
+                4.3260946839139515e-34,
+                4.0
+              ],
+              [
+                9.467286370225952e-36,
+                5.0
+              ],
+              [
+                1.2610588586038265e-35,
+                6.0
+              ]
+            ]
+          },
+          "quantile": {
+            "width": 6.0,
+            "scores": [
+              [
+                9.203487945304107e-31,
+                4.0
+              ],
+              [
+                5.862719540585346e-31,
+                5.0
+              ],
+              [
+                3.4549055630167427e-31,
+                6.0
+              ]
+            ]
+          },
+          "tail": {
+            "width": 4.0,
+            "scores": [
+              [
+                5.5139640806664045e-33,
+                4.0
+              ],
+              [
+                9.354758870862954e-33,
+                5.0
+              ],
+              [
+                2.679937968758884e-32,
+                6.0
+              ]
+            ]
+          },
+          "adaptive": {
+            "width": 6.0,
+            "scores": [
+              [
+                3.8483656006967627e-34,
+                4.0
+              ],
+              [
+                7.020664750896011e-33,
+                5.0
+              ],
+              [
+                1.0262755677134627e-35,
+                6.0
+              ]
+            ]
+          }
+        },
+        "candidates": {
+          "IS": [
+            {
+              "score": 0.000132014682959249,
+              "sampler": "is",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 9.847812059281955e-05,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.00021763302531597128,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "IS + strat.": [
+            {
+              "score": 0.00015541483959159965,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 4.90420031483957e-05,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.00014121173188940027,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "Spline uniforme": [
+            {
+              "score": 0.0008368615825811865,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0005000603597598001,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0006099882983465317,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline quantiles": [
+            {
+              "score": 0.0008549933760905602,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0005004744026133308,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0006339218101433817,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline queue": [
+            {
+              "score": 0.0008227909171518976,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00047005528219934255,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0005855873403054848,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline adaptative": [
+            {
+              "score": 0.0012087389554417552,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0006422280331879269,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.000734318765663612,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + strat.": [
+            {
+              "score": 0.00033833894586109104,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00034852818460134465,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0002281809263276437,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS": [
+            {
+              "score": 0.00016089400637149819,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00021725468438623126,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.000191086589797484,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.00023311832475677812,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00016100195763583283,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 6.655213931245816e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.00016689335193546766,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0001370068211200339,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00015177696802773315,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS + strat.": [
+            {
+              "score": 9.041638111073613e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0002510683182261916,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 7.670382620759376e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 5.3897540001956686e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 7.85315791271482e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0001001033474710614,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 8.685402419541646e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 4.018958455259401e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 6.784316580677134e-05,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + scindées": [
+            {
+              "score": 0.0005219956947045569,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0008341424081902649,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00034750905818634547,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline seule": [
+            {
+              "score": 0.000292310877897932,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": false
+            },
+            {
+              "score": 0.00031135091320584103,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": false
+            },
+            {
+              "score": 0.0002091474461700091,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": false
+            }
+          ]
+        },
+        "selected": {
+          "MC": {
+            "sampler": "mc",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS": {
+            "sampler": "is",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Spline uniforme": {
+            "sampler": "mc",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline quantiles": {
+            "sampler": "mc",
+            "grid": "quantile",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline queue": {
+            "sampler": "mc",
+            "grid": "tail",
+            "shift": 1.0,
+            "width": 4.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline adaptative": {
+            "sampler": "mc",
+            "grid": "adaptive",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline + strat.": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS": {
+            "sampler": "is",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "uniform",
+            "shift": 1.35,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline + scindées": {
+            "sampler": "split",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline seule": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": false
+          },
+          "Spline + scindées + strat.": {
+            "sampler": "split_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          }
+        }
+      },
+      "target_ms": {
+        "2048": 0.051042,
+        "8192": 0.135791
+      },
+      "calibration_seconds": 0.838493541,
+      "reference_seconds": 0.000386041,
+      "matching_seconds": 1.763533333,
+      "decomposition_bridge": {
+        "exact:512": {
+          "n": 512,
+          "parent_median_ms": 0.299375,
+          "triple_median_ms": 0.33764550000000004
+        },
+        "exact:2048": {
+          "n": 2048,
+          "parent_median_ms": 0.6117079999999999,
+          "triple_median_ms": 0.772604
+        },
+        "exact:8192": {
+          "n": 8192,
+          "parent_median_ms": 1.828771,
+          "triple_median_ms": 2.496208
+        },
+        "temps:2048": {
+          "n": 128,
+          "parent_median_ms": 0.2247085,
+          "triple_median_ms": 0.23141650000000002
+        },
+        "temps:8192": {
+          "n": 128,
+          "parent_median_ms": 0.220187,
+          "triple_median_ms": 0.2273955
+        }
+      }
+    },
+    "options_1d": {
+      "reference": {
+        "value": [
+          16.797298674305214,
+          19.955405383042816
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "truncation_delta": [
+          2.206235194535111e-12,
+          1.0533796057643485e-11
+        ],
+        "kind": "racines de la probabilité de dépassement et quadrature gaussienne"
+      },
+      "calibration": {
+        "grids": {
+          "uniform": {
+            "width": 6.0,
+            "scores": [
+              [
+                0.002820759262916297,
+                4.0
+              ],
+              [
+                8.984293357675992e-05,
+                5.0
+              ],
+              [
+                4.0108216083278566e-08,
+                6.0
+              ]
+            ]
+          },
+          "quantile": {
+            "width": 4.0,
+            "scores": [
+              [
+                0.00931449972822467,
+                4.0
+              ],
+              [
+                0.05274941602088694,
+                5.0
+              ],
+              [
+                0.14271459354647575,
+                6.0
+              ]
+            ]
+          },
+          "tail": {
+            "width": 6.0,
+            "scores": [
+              [
+                0.002831891439692789,
+                4.0
+              ],
+              [
+                9.095370068356712e-05,
+                5.0
+              ],
+              [
+                5.675374602531002e-06,
+                6.0
+              ]
+            ]
+          },
+          "adaptive": {
+            "width": 6.0,
+            "scores": [
+              [
+                0.002845266031631714,
+                4.0
+              ],
+              [
+                9.051069231749595e-05,
+                5.0
+              ],
+              [
+                3.8157861798202e-06,
+                6.0
+              ]
+            ]
+          }
+        },
+        "candidates": {
+          "IS": [
+            {
+              "score": 0.00016929582769731685,
+              "sampler": "is",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.00014063045236428436,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.00012607155332654458,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "IS + strat.": [
+            {
+              "score": 9.158915856938335e-07,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 3.8550837127583573e-07,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 2.25554687396893e-07,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "Spline uniforme": [
+            {
+              "score": 0.0012649392167203013,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0006451029331171989,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00042600680869768536,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline quantiles": [
+            {
+              "score": 0.0013121848220359357,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0006762870706308358,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0004984650536293919,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline queue": [
+            {
+              "score": 0.0012478556115840052,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0006249541668558139,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0004068714781506778,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline adaptative": [
+            {
+              "score": 0.001982102555580509,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0009433352730734641,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0005649179024383677,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + strat.": [
+            {
+              "score": 1.1017039845468652e-05,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 2.5202995548496106e-06,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 8.738027639938389e-07,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS": [
+            {
+              "score": 0.0002496072227786054,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00010967768381645408,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00012449948890341247,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0002557442197569555,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0001341607902620388,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0001849219168121659,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0003565465251834884,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00011811126862900173,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 8.230152218323617e-05,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS + strat.": [
+            {
+              "score": 3.968687472352573e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 1.8691831037235824e-07,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 7.394223438611691e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 7.46337884032569e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 5.0152832029507655e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 1.5527504683021355e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 9.23363496743461e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 3.462923439133142e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 1.4816367893348603e-08,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + scindées": [
+            {
+              "score": 0.0013947718102776069,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0004886571801865644,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0007010573546754177,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline seule": [
+            {
+              "score": 6.4900368509593285e-06,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": false
+            },
+            {
+              "score": 1.6322264127398277e-06,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": false
+            },
+            {
+              "score": 6.626078618983112e-07,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": false
+            }
+          ]
+        },
+        "selected": {
+          "MC": {
+            "sampler": "mc",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS": {
+            "sampler": "is",
+            "grid": "",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Spline uniforme": {
+            "sampler": "mc",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline quantiles": {
+            "sampler": "mc",
+            "grid": "quantile",
+            "shift": 1.0,
+            "width": 4.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline queue": {
+            "sampler": "mc",
+            "grid": "tail",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline adaptative": {
+            "sampler": "mc",
+            "grid": "adaptive",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + strat.": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS": {
+            "sampler": "is",
+            "grid": "uniform",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "uniform",
+            "shift": 1.35,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + scindées": {
+            "sampler": "split",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 4,
+            "corrected": true
+          },
+          "Spline seule": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": false
+          },
+          "Spline + scindées + strat.": {
+            "sampler": "split_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          }
+        }
+      },
+      "target_ms": {
+        "2048": 0.278125,
+        "8192": 1.008667
+      },
+      "calibration_seconds": 0.923980125,
+      "reference_seconds": 0.01878425,
+      "matching_seconds": 2.678213583,
+      "decomposition_bridge": {
+        "exact:512": {
+          "n": 512,
+          "parent_median_ms": 0.350354,
+          "triple_median_ms": 0.37083350000000004
+        },
+        "exact:2048": {
+          "n": 2048,
+          "parent_median_ms": 0.889729,
+          "triple_median_ms": 0.9781664999999999
+        },
+        "exact:8192": {
+          "n": 8192,
+          "parent_median_ms": 2.952167,
+          "triple_median_ms": 3.3644375
+        },
+        "temps:2048": {
+          "n": 159,
+          "parent_median_ms": 0.2648125,
+          "triple_median_ms": 0.271083
+        },
+        "temps:8192": {
+          "n": 2104,
+          "parent_median_ms": 0.902729,
+          "triple_median_ms": 0.98125
+        }
+      }
+    },
+    "options_4d": {
+      "reference": {
+        "value": [
+          54.41354437594442,
+          64.31533159948452
+        ],
+        "kind": "Sobol brouillé (valorisations exactes)",
+        "ci95": [
+          0.014871336720254928,
+          0.0027084514777339997
+        ],
+        "half_delta": [
+          0.008893937650590544,
+          0.0014496254451614732
+        ],
+        "power": 21,
+        "replicates": [
+          [
+            54.44492735508691,
+            64.31499117319309
+          ],
+          [
+            54.41859350664774,
+            64.31241180016377
+          ],
+          [
+            54.430368559126265,
+            64.31874093325024
+          ],
+          [
+            54.41536975717153,
+            64.32133884512781
+          ],
+          [
+            54.39902997128459,
+            64.31402260225198
+          ],
+          [
+            54.403785709893995,
+            64.31551452785233
+          ],
+          [
+            54.40643749461881,
+            64.31398238996303
+          ],
+          [
+            54.38984265372553,
+            64.31165052407394
+          ]
+        ]
+      },
+      "calibration": {
+        "grids": {
+          "uniform": {
+            "width": 5.0,
+            "scores": [
+              [
+                0.0011401854001840584,
+                4.0
+              ],
+              [
+                1.733001912081657e-07,
+                5.0
+              ],
+              [
+                3.389889070473777e-07,
+                6.0
+              ]
+            ]
+          },
+          "quantile": {
+            "width": 4.0,
+            "scores": [
+              [
+                0.038594983962152156,
+                4.0
+              ],
+              [
+                0.18834881535204445,
+                5.0
+              ],
+              [
+                0.4365184233641651,
+                6.0
+              ]
+            ]
+          },
+          "tail": {
+            "width": 5.0,
+            "scores": [
+              [
+                0.0011454459476770026,
+                4.0
+              ],
+              [
+                1.9176337045915832e-05,
+                5.0
+              ],
+              [
+                9.900806451893465e-05,
+                6.0
+              ]
+            ]
+          },
+          "adaptive": {
+            "width": 5.0,
+            "scores": [
+              [
+                0.0015152430593505235,
+                4.0
+              ],
+              [
+                1.0993676062060194e-05,
+                5.0
+              ],
+              [
+                5.8005088903611264e-05,
+                6.0
+              ]
+            ]
+          }
+        },
+        "candidates": {
+          "IS": [
+            {
+              "score": 0.0006527106726939734,
+              "sampler": "is",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.0008141475984072386,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.0007817007621602592,
+              "sampler": "is",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "IS + strat.": [
+            {
+              "score": 0.000768172601320645,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 0.65,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.0005359602958489464,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.0,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            },
+            {
+              "score": 0.0010612032077754018,
+              "sampler": "is_strat",
+              "grid": "",
+              "shift": 1.35,
+              "width": 6.0,
+              "nodes": 31,
+              "amplification": 1,
+              "corrected": true
+            }
+          ],
+          "Spline uniforme": [
+            {
+              "score": 0.004274041653416963,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0018686230793016436,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0012897366920390277,
+              "sampler": "mc",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline quantiles": [
+            {
+              "score": 0.004319321452369128,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0019039144969217384,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.001540513322543303,
+              "sampler": "mc",
+              "grid": "quantile",
+              "shift": 1.0,
+              "width": 4.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline queue": [
+            {
+              "score": 0.0041160731055530884,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0017942488764142608,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0012153626680174584,
+              "sampler": "mc",
+              "grid": "tail",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline adaptative": [
+            {
+              "score": 0.0049722457327381715,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0021212114740681784,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0013876204156447434,
+              "sampler": "mc",
+              "grid": "adaptive",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + strat.": [
+            {
+              "score": 0.005098237566788094,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0033974466140137367,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0008652337586850675,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS": [
+            {
+              "score": 0.0009251924777811141,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0008036547586789857,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0004743274296242997,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.000943531427821094,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0007845223329364182,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0007111890407747664,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0009595031717995558,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0009472942766886634,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0010396299112745198,
+              "sampler": "is",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + IS + strat.": [
+            {
+              "score": 0.0009533220286053318,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.00045110361209484346,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00042799344245687273,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 0.65,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0008205611075142035,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0004987307429113922,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.0003070088959335664,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            },
+            {
+              "score": 0.0008674640219384652,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.0005424663858593937,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.00035977821867865276,
+              "sampler": "is_strat",
+              "grid": "uniform",
+              "shift": 1.35,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline + scindées": [
+            {
+              "score": 0.004862837079270563,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": true
+            },
+            {
+              "score": 0.002424795723804422,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": true
+            },
+            {
+              "score": 0.000902629794027782,
+              "sampler": "split",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": true
+            }
+          ],
+          "Spline seule": [
+            {
+              "score": 0.002676124050992402,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 2,
+              "corrected": false
+            },
+            {
+              "score": 0.0021080984837275217,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 4,
+              "corrected": false
+            },
+            {
+              "score": 0.0006311565304289614,
+              "sampler": "strat",
+              "grid": "uniform",
+              "shift": 1.0,
+              "width": 5.0,
+              "nodes": 31,
+              "amplification": 8,
+              "corrected": false
+            }
+          ]
+        },
+        "selected": {
+          "MC": {
+            "sampler": "mc",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS": {
+            "sampler": "is",
+            "grid": "",
+            "shift": 0.65,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "grid": "",
+            "shift": 1.0,
+            "width": 6.0,
+            "nodes": 31,
+            "amplification": 1,
+            "corrected": true
+          },
+          "Spline uniforme": {
+            "sampler": "mc",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline quantiles": {
+            "sampler": "mc",
+            "grid": "quantile",
+            "shift": 1.0,
+            "width": 4.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline queue": {
+            "sampler": "mc",
+            "grid": "tail",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline adaptative": {
+            "sampler": "mc",
+            "grid": "adaptive",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + strat.": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS": {
+            "sampler": "is",
+            "grid": "uniform",
+            "shift": 0.65,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + IS + strat.": {
+            "sampler": "is_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline + scindées": {
+            "sampler": "split",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          },
+          "Spline seule": {
+            "sampler": "strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": false
+          },
+          "Spline + scindées + strat.": {
+            "sampler": "split_strat",
+            "grid": "uniform",
+            "shift": 1.0,
+            "width": 5.0,
+            "nodes": 31,
+            "amplification": 8,
+            "corrected": true
+          }
+        }
+      },
+      "target_ms": {
+        "2048": 1.044166,
+        "8192": 4.087209
+      },
+      "calibration_seconds": 2.408495958,
+      "reference_seconds": 9.698459333,
+      "matching_seconds": 8.914658167,
+      "decomposition_bridge": {
+        "exact:512": {
+          "n": 512,
+          "parent_median_ms": 1.7176045000000002,
+          "triple_median_ms": 1.670146
+        },
+        "exact:2048": {
+          "n": 2048,
+          "parent_median_ms": 5.2012295,
+          "triple_median_ms": 5.309208
+        },
+        "exact:8192": {
+          "n": 8192,
+          "parent_median_ms": 14.9302505,
+          "triple_median_ms": 16.3464795
+        },
+        "temps:2048": {
+          "n": 351,
+          "parent_median_ms": 1.0684585,
+          "triple_median_ms": 1.119833
+        },
+        "temps:8192": {
+          "n": 2168,
+          "parent_median_ms": 4.1440835,
+          "triple_median_ms": 4.4906665
+        }
+      }
+    }
+  }
+}
