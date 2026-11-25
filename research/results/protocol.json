@@ -1,0 +1,5981 @@
+{
+  "budgets": [
+    128,
+    512,
+    2048
+  ],
+  "repeats": 32,
+  "pilot_seeds": [
+    211000,
+    211001,
+    211002,
+    211003,
+    211004,
+    211005,
+    211006,
+    211007,
+    211008,
+    211009,
+    211010,
+    211011
+  ],
+  "test_start": 710000,
+  "python": "3.14.0",
+  "os": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "problems": {
+    "polynomial": {
+      "reference": {
+        "value": 0.6,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 1,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.524925411525503e-09,
+              "0.25": 4.2547767580096815e-12,
+              "0.5": 3.216951912022228e-14
+            },
+            "exact": 4608
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00022371098494430725,
+              "0.25": 5.13439474221675e-05,
+              "0.5": 2.8566869783143957e-05
+            },
+            "exact": 4608
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 3.0429718851990306e-06,
+              "0.25": 5.5421432553592255e-08,
+              "0.5": 1.3107446498424843e-09
+            },
+            "exact": 4608
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.6012531726716276e-30,
+              "0.25": 1.9024546092105595e-29,
+              "0.5": 1.1439603666763224e-29
+            },
+            "exact": 4608
+          },
+          "Adaptatif + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 2.5963564243195415e-08,
+              "0.25": 7.714281909614392e-11,
+              "0.5": 2.1550974368484509e-10
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.3129808751158787e-10,
+              "0.25": 2.1075810938790836e-12,
+              "0.5": 1.408619651040885e-14
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 8.379806234244896e-09,
+              "0.25": 1.9376418389267376e-11,
+              "0.5": 1.19121475415549e-13
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.498195865588819e-09,
+              "0.25": 5.302054634260141e-12,
+              "0.5": 3.968188854327848e-14
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 55.282
+        },
+        "512": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.894738556258213e-15,
+              "0.25": 2.767373074223896e-17,
+              "0.5": 8.892060008820157e-20
+            },
+            "exact": 18432
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.8780960412729468e-06,
+              "0.25": 4.100721242867387e-07,
+              "0.5": 2.9352763880821747e-07
+            },
+            "exact": 18432
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.343597850168765e-10,
+              "0.25": 1.875205968401855e-11,
+              "0.5": 2.3239755959221867e-13
+            },
+            "exact": 18432
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 3.9330991155195334e-31,
+              "0.25": 8.807452720223228e-31,
+              "0.5": 4.358904717769511e-30
+            },
+            "exact": 18432
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.0758769936480302e-11,
+              "0.25": 9.904640711196548e-14,
+              "0.5": 4.876827522480646e-16
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 7.162767674407294e-16,
+              "0.25": 1.240185915730516e-18,
+              "0.5": 1.3940323238204085e-19
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.0460957770384678e-14,
+              "0.25": 3.135489552636876e-17,
+              "0.5": 2.7377258566218834e-19
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.871300525020987e-15,
+              "0.25": 3.224023081972962e-17,
+              "0.5": 1.4352854314470825e-19
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 91.713
+        },
+        "2048": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.5658657521496618e-20,
+              "0.25": 1.3546229161395956e-22,
+              "0.5": 4.30586188978902e-25
+            },
+            "exact": 73728
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.546774543494453e-08,
+              "0.25": 1.4038901183408639e-08,
+              "0.5": 2.5614734101112487e-09
+            },
+            "exact": 73728
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.9127086481734275e-14,
+              "0.25": 4.892908748745721e-15,
+              "0.5": 2.4601945635275436e-16
+            },
+            "exact": 73728
+          },
+          "Chebyshev + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.4667882456453188e-30,
+              "0.25": 1.3267206133262472e-30,
+              "0.5": 5.4570349551510334e-31
+            },
+            "exact": 73728
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.027847376740191e-17,
+              "0.25": 2.281312426859297e-19,
+              "0.5": 9.88231526135311e-22
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 4.191579715856659e-06,
+              "0.25": 1.836266565040227e-23,
+              "0.5": 1.867224753508024e-25
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.1198080470995726e-08,
+              "0.25": 2.885296069486918e-08,
+              "0.5": 9.433547652323903e-25
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.2574611682603998e-20,
+              "0.25": 2.043454551098118e-22,
+              "0.5": 3.8402231147030457e-25
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 294.38
+        }
+      }
+    },
+    "exponential": {
+      "reference": {
+        "value": 1.43512219658387,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 1,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.5985084511937527e-10,
+              "0.25": 8.689706815322461e-13,
+              "0.5": 7.168982564351019e-15
+            },
+            "exact": 4608
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00010493528184896037,
+              "0.25": 4.493275987554485e-05,
+              "0.5": 3.810354315059303e-05
+            },
+            "exact": 4608
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.3133154056970826e-08,
+              "0.25": 4.412159178131271e-10,
+              "0.5": 3.5608701771061267e-12
+            },
+            "exact": 4608
+          },
+          "Chebyshev + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 2.1342860570024507e-19,
+              "0.25": 4.5493966977234484e-30,
+              "0.5": 1.4060549202717694e-29
+            },
+            "exact": 4608
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.6304525031615288e-09,
+              "0.25": 2.801106170925167e-12,
+              "0.5": 5.349707419817878e-14
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.4263173821338006e-10,
+              "0.25": 1.321403992598846e-13,
+              "0.5": 3.123260529403941e-15
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.4869598548886337e-08,
+              "0.25": 4.048674910456895e-08,
+              "0.5": 9.03698942425766e-08
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.541361490880939e-10,
+              "0.25": 4.4591839166638966e-13,
+              "0.5": 2.534334101348195e-15
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 66.504
+        },
+        "512": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.465204738186778e-16,
+              "0.25": 2.035105882626343e-18,
+              "0.5": 1.442686055476231e-20
+            },
+            "exact": 18432
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.0381114199564108e-06,
+              "0.25": 4.952531369094525e-07,
+              "0.5": 2.8031307961624447e-07
+            },
+            "exact": 18432
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.0518048799969866e-12,
+              "0.25": 2.3403256876895653e-14,
+              "0.5": 4.138060393370712e-16
+            },
+            "exact": 18432
+          },
+          "Chebyshev + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.6449542739551782e-30,
+              "0.25": 5.378597081052353e-31,
+              "0.5": 1.8152765148551693e-30
+            },
+            "exact": 18432
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 7.12590708023781e-13,
+              "0.25": 1.1152430718131775e-16,
+              "0.5": 4.249015304864364e-18
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.608797850090569e-16,
+              "0.25": 7.832537596291229e-19,
+              "0.5": 1.7525133182485935e-20
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 3.0845655979544283e-09,
+              "0.25": 3.683154592975232e-09,
+              "0.5": 4.099030518378466e-09
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.238508791709767e-16,
+              "0.25": 7.562394214565077e-19,
+              "0.5": 4.554447413218126e-21
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 98.586
+        },
+        "2048": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.100118093483613e-22,
+              "0.25": 6.672629073403278e-24,
+              "0.5": 2.9591750276650595e-26
+            },
+            "exact": 73728
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.423110695482043e-08,
+              "0.25": 1.241628764992219e-08,
+              "0.5": 5.138756947951917e-10
+            },
+            "exact": 73728
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 8.543324003453571e-17,
+              "0.25": 7.982862632830826e-19,
+              "0.5": 1.3961462699773426e-20
+            },
+            "exact": 73728
+          },
+          "Chebyshev + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.423418723394456e-31,
+              "0.25": 3.944304526105059e-31,
+              "0.5": 3.7201963143945445e-31
+            },
+            "exact": 73728
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.501303506894071e-19,
+              "0.25": 4.126293206728677e-23,
+              "0.5": 6.56667314920389e-26
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.1357101312960468e-13,
+              "0.25": 2.095759223418256e-24,
+              "0.5": 1.1454520309334676e-26
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 8.201961273764074e-10,
+              "0.25": 5.091421043638772e-10,
+              "0.5": 7.029845375964594e-10
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.453611309422446e-13,
+              "0.25": 3.896056596403892e-24,
+              "0.5": 4.510053156508398e-26
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 319.857
+        }
+      }
+    },
+    "oscillatory": {
+      "reference": {
+        "value": 3.726653172078671e-06,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 1,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00798057842788623,
+              "0.25": 2.3885473764339445e-05,
+              "0.5": 2.5781005757959832e-08
+            },
+            "exact": 4608
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.14589007094850312,
+              "0.25": 0.059185648917529095,
+              "0.5": 0.016722674772682408
+            },
+            "exact": 4608
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.007155193984513927,
+              "0.25": 0.0003704918400247621,
+              "0.5": 1.9001464947836962e-05
+            },
+            "exact": 4608
+          },
+          "Chebyshev + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.007615111542777944,
+              "0.25": 0.005976826035590691,
+              "0.5": 0.008606949121071003
+            },
+            "exact": 4608
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.001959828079750686,
+              "0.25": 5.968538385839589e-05,
+              "0.5": 2.6463665322322115e-05
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00025134777584803693,
+              "0.25": 2.5887168535707557e-06,
+              "0.5": 1.0615260929996949e-08
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00798057842788623,
+              "0.25": 2.3885473764339445e-05,
+              "0.5": 2.5781005757959832e-08
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.009173389217894986,
+              "0.25": 2.1173129569783127e-05,
+              "0.5": 3.0694364442653555e-08
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 53.862
+        },
+        "512": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.908663463182069e-09,
+              "0.25": 1.4210243852353586e-11,
+              "0.5": 3.204331974523765e-14
+            },
+            "exact": 18432
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.004788188236546491,
+              "0.25": 0.0016920849868890836,
+              "0.5": 0.00116211588152497
+            },
+            "exact": 18432
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.140837635265475e-06,
+              "0.25": 1.0677334815575686e-07,
+              "0.5": 4.43697470510996e-09
+            },
+            "exact": 18432
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 0.0006238408589420238,
+              "0.25": 0.0008062332937449665,
+              "0.5": 0.0011086903122960545
+            },
+            "exact": 18432
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 3.960649925500678e-06,
+              "0.25": 2.8294964663657246e-10,
+              "0.5": 1.527604571119206e-13
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.562452912990307e-11,
+              "0.25": 7.673163649336874e-13,
+              "0.5": 1.0558040739920982e-14
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.908663463182069e-09,
+              "0.25": 1.4210243852353586e-11,
+              "0.5": 3.204331974523765e-14
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.642147873039311e-09,
+              "0.25": 2.0383552894419372e-11,
+              "0.5": 4.0135300512089025e-14
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 92.824
+        },
+        "2048": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 8.272808439221773e-15,
+              "0.25": 4.480389118133201e-17,
+              "0.5": 2.1055051271078767e-19
+            },
+            "exact": 73728
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00017953682055501139,
+              "0.25": 4.5541203112945764e-05,
+              "0.5": 1.2753426817504452e-05
+            },
+            "exact": 73728
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.1259042436313933e-09,
+              "0.25": 3.2669058686406784e-11,
+              "0.5": 1.285246394528318e-12
+            },
+            "exact": 73728
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 0.00013909986744613194,
+              "0.25": 0.00015673250332204168,
+              "0.5": 0.00044738553700012163
+            },
+            "exact": 73728
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.6245210775306694e-14,
+              "0.25": 4.581220346821353e-16,
+              "0.5": 2.116697140322931e-18
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.2642427135601775e-09,
+              "0.25": 2.0287341524530936e-18,
+              "0.5": 1.7387949614484647e-20
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 8.272808439221773e-15,
+              "0.25": 4.480389118133201e-17,
+              "0.5": 2.1055051271078767e-19
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.108492641928685e-15,
+              "0.25": 5.861664216880615e-17,
+              "0.5": 3.9110283717792795e-19
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 306.349
+        }
+      }
+    },
+    "local_curvature": {
+      "reference": {
+        "value": 0.014935561139190034,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 1,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.850909894825855e-05,
+              "0.25": 3.556391686725595e-05,
+              "0.5": 9.19956012467897e-07
+            },
+            "exact": 4608
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.854739999864629e-05,
+              "0.25": 0.0031718349398568986,
+              "0.5": 0.012435608679547515
+            },
+            "exact": 4608
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.852501068872468e-05,
+              "0.25": 3.983631800408969e-05,
+              "0.5": 2.349335703797235e-06
+            },
+            "exact": 4608
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.860455564796867e-05,
+              "0.25": 8.907141676919591e-05,
+              "0.5": 0.00014581035914425802
+            },
+            "exact": 4608
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.951795021380006e-05,
+              "0.25": 7.874835763962636e-10,
+              "0.5": 9.88541075917262e-13
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 7.466792132552839e-06,
+              "0.25": 5.102723400840653e-06,
+              "0.5": 1.5058624488966064e-06
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 4.4282736148134537e-05,
+              "0.25": 1.0352407788898064e-05,
+              "0.5": 1.4815942216582358e-07
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.7865820963122057e-05,
+              "0.25": 1.936966703595829e-05,
+              "0.5": 1.228172321258702e-06
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 53.595
+        },
+        "512": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.0222505488467976e-07,
+              "0.25": 1.7352829640353272e-09,
+              "0.5": 4.577316980056558e-12
+            },
+            "exact": 18432
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0012079785023147245,
+              "0.25": 1.4567472698621849e-05,
+              "0.5": 8.01521106117957e-11
+            },
+            "exact": 18432
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.6392972531150533e-07,
+              "0.25": 1.3902580916037149e-08,
+              "0.5": 7.430648620925512e-09
+            },
+            "exact": 18432
+          },
+          "Chebyshev + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 7.949265759453687e-06,
+              "0.25": 7.624017083277754e-06,
+              "0.5": 1.7023097496676913e-05
+            },
+            "exact": 18432
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 9.354299738488599e-14,
+              "0.25": 4.573782632328453e-15,
+              "0.5": 8.146814917279452e-17
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.435428337237105e-09,
+              "0.25": 3.734720837270597e-10,
+              "0.5": 3.4150875121984506e-12
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 7.681006597251194e-08,
+              "0.25": 1.5929079475955429e-10,
+              "0.5": 6.436815052644585e-13
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.9934774154173925e-07,
+              "0.25": 2.4396749728982876e-09,
+              "0.5": 7.378460572823478e-12
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 92.053
+        },
+        "2048": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 8.42453441939149e-13,
+              "0.25": 2.5175544542414547e-15,
+              "0.5": 8.49037463332637e-18
+            },
+            "exact": 73728
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.251323950653395e-11,
+              "0.25": 2.1208634795476862e-14,
+              "0.5": 2.004339770951456e-16
+            },
+            "exact": 73728
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.4771628021677845e-09,
+              "0.25": 2.5852166688093575e-11,
+              "0.5": 4.329686373275133e-13
+            },
+            "exact": 73728
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.9694384678872094e-06,
+              "0.25": 1.981709974676676e-06,
+              "0.5": 3.867576003808785e-06
+            },
+            "exact": 73728
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 8.132262801282831e-18,
+              "0.25": 2.2549131435861858e-20,
+              "0.5": 6.392111263023089e-22
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.4087184047395997e-14,
+              "0.25": 1.4782801774649827e-16,
+              "0.5": 3.62476402637915e-18
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.704972415681077e-14,
+              "0.25": 3.4921004120888876e-16,
+              "0.5": 2.747350651635181e-18
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 7.80059430200683e-13,
+              "0.25": 2.4194393818749873e-15,
+              "0.5": 8.949905506914623e-18
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 295.386
+        }
+      }
+    },
+    "discontinuous": {
+      "reference": {
+        "value": 0.3556912451994533,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 1,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Spline uniforme + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00038127790681086047,
+              "0.25": 0.00014432620946147352,
+              "0.5": 0.00038900130437022443
+            },
+            "exact": 4608
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.435016541011029e-05,
+              "0.25": 0.00010286907941886537,
+              "0.5": 2.941782010313948e-05
+            },
+            "exact": 4608
+          },
+          "PCHIP + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00039895321104692745,
+              "0.25": 0.00012844149127977288,
+              "0.5": 0.00038401364789806424
+            },
+            "exact": 4608
+          },
+          "Chebyshev + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.0003722453975267907,
+              "0.25": 0.0002824491492640914,
+              "0.5": 0.0003659980902945951
+            },
+            "exact": 4608
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00019970054588531905,
+              "0.25": 9.346684539416254e-06,
+              "0.5": 3.2800368836605484e-10
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.336276867761128e-06,
+              "0.25": 2.0475621579665048e-05,
+              "0.5": 4.555057917534641e-05
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.0005724898197988746,
+              "0.25": 6.807422509959321e-05,
+              "0.5": 0.00025585643579904296
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.0004149054778739964,
+              "0.25": 0.00015571913668271443,
+              "0.5": 0.00049806832203429
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 53.197
+        },
+        "512": {
+          "Spline uniforme + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.680344825289932e-05,
+              "0.25": 5.934390157580097e-06,
+              "0.5": 1.780600916068934e-05
+            },
+            "exact": 18432
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.184845971646862e-06,
+              "0.25": 4.887942948485091e-06,
+              "0.5": 3.146068590160973e-06
+            },
+            "exact": 18432
+          },
+          "PCHIP + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.7758998328419226e-05,
+              "0.25": 6.616340858446311e-06,
+              "0.5": 1.631197642626699e-05
+            },
+            "exact": 18432
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.6097852657192138e-05,
+              "0.25": 2.246784505873015e-05,
+              "0.5": 4.560841572925784e-05
+            },
+            "exact": 18432
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.591450841930041e-11,
+              "0.25": 6.8240816992061816e-12,
+              "0.5": 1.6899924622420145e-12
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.0477942179682847e-06,
+              "0.25": 1.1031632490615368e-06,
+              "0.5": 3.1156361205450037e-07
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 5.0593547710374025e-05,
+              "0.25": 1.4736517983861931e-05,
+              "0.5": 2.0183177507757465e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.641450392926584e-05,
+              "0.25": 1.0057457497484107e-05,
+              "0.5": 3.069364135659422e-05
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 88.417
+        },
+        "2048": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.6773978652168224e-06,
+              "0.25": 2.2349903956635806e-07,
+              "0.5": 1.937351865690856e-07
+            },
+            "exact": 73728
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 3.26213487782976e-07,
+              "0.25": 2.2037836148471098e-07,
+              "0.5": 2.173195609844985e-07
+            },
+            "exact": 73728
+          },
+          "PCHIP + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 2.497217379790249e-06,
+              "0.25": 1.5368789118542612e-07,
+              "0.5": 2.346324594430352e-07
+            },
+            "exact": 73728
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 5.964853227375199e-06,
+              "0.25": 1.0100879004949997e-05,
+              "0.5": 1.486025120055532e-05
+            },
+            "exact": 73728
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 4.2374810918119965e-12,
+              "0.25": 1.1995223096942957e-12,
+              "0.5": 5.586369838327819e-13
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.9094584519316e-08,
+              "0.25": 1.0400707031915367e-07,
+              "0.5": 1.5250516753837663e-07
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.4224966929722162e-06,
+              "0.25": 2.183916463626998e-07,
+              "0.5": 1.7082810059840878e-07
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 3.942317032328159e-06,
+              "0.25": 2.6967858384322724e-07,
+              "0.5": 4.3373805323797014e-07
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 282.932
+        }
+      }
+    },
+    "rare_tail": {
+      "reference": {
+        "value": 0.00033692926567688086,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 2,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 2.9698565011378915e-08,
+              "0.25": 1.1402420767450205e-09,
+              "0.5": 2.0399433914832654e-06
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.1377642328328583e-06,
+              "0.25": 3.148347171191557e-07,
+              "0.5": 2.005198443650842e-05
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.5880627893886186e-07,
+              "0.25": 1.7732970726213582e-07,
+              "0.5": 1.0241253650301073e-07
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.4243802686689296e-08,
+              "0.25": 2.1440081373074865e-09,
+              "0.5": 5.0684937906841235e-06
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 55.789
+        },
+        "512": {
+          "Surrogate + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 7.366444971725007e-07,
+              "0.25": 8.021386307675119e-07,
+              "0.5": 1.4095789698454266e-06
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.493012870118822e-07,
+              "0.25": 6.686612114731604e-07,
+              "0.5": 4.0857482995666194e-07
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.6752903482747377e-08,
+              "0.25": 6.3763837931445035e-09,
+              "0.5": 4.5036981406649223e-07
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 8.211095403924417e-07,
+              "0.25": 9.595721076993426e-07,
+              "0.5": 2.291642671303663e-06
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 89.843
+        },
+        "2048": {
+          "Surrogate + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.9885909138236365e-07,
+              "0.25": 1.732527089172102e-07,
+              "0.5": 1.1673233231662656e-07
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.9341982813155018e-07,
+              "0.25": 1.662548494523971e-07,
+              "0.5": 2.0094465902892513e-07
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 2.072596886425096e-09,
+              "0.25": 1.6028338504120748e-09,
+              "0.5": 1.4434618658815557e-08
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.8482152473848528e-07,
+              "0.25": 2.496354645475926e-07,
+              "0.5": 8.546883393364257e-08
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 258.837
+        }
+      }
+    },
+    "european": {
+      "reference": {
+        "value": 0.0682910347938312,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 1,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Kronrod adaptatif": {
+            "sampler": "adaptive_quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Spline uniforme + MC": {
+            "sampler": "mc",
+            "surrogate": "cubic",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Spline quantiles + MC": {
+            "sampler": "mc",
+            "surrogate": "quantile",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "PCHIP + MC": {
+            "sampler": "mc",
+            "surrogate": "pchip",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Chebyshev + MC": {
+            "sampler": "mc",
+            "surrogate": "cheb",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Adaptatif + MC": {
+            "sampler": "mc",
+            "surrogate": "adaptive",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.6703043348240894e-07,
+              "0.25": 3.505830647593181e-08,
+              "0.5": 1.7491229877028675e-08
+            },
+            "exact": 4608
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.901705423422955e-08,
+              "0.25": 1.10911093382247e-09,
+              "0.5": 3.7544498852171507e-10
+            },
+            "exact": 4608
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 4.167062402159917e-08,
+              "0.25": 2.2735070135483453e-08,
+              "0.5": 1.8314330775803108e-08
+            },
+            "exact": 4608
+          },
+          "Chebyshev + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.0292186217733929e-06,
+              "0.25": 3.0578456338225185e-07,
+              "0.5": 2.2093022943223963e-07
+            },
+            "exact": 4608
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.703262381057773e-08,
+              "0.25": 1.0219252990849634e-10,
+              "0.5": 1.039010672363168e-11
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 4.527421694960537e-10,
+              "0.25": 5.514738660217076e-10,
+              "0.5": 7.557325219707436e-10
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 3.007698578448699e-07,
+              "0.25": 2.8688995664167813e-08,
+              "0.5": 8.674021014751842e-09
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.514349857646025e-07,
+              "0.25": 5.356447527523427e-08,
+              "0.5": 1.583042664491105e-08
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 57.075
+        },
+        "512": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 7.518767605840463e-10,
+              "0.25": 1.502000152750157e-10,
+              "0.5": 3.728334321791854e-11
+            },
+            "exact": 18432
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.5633233611796822e-11,
+              "0.25": 4.6710665911800585e-12,
+              "0.5": 5.277047148760916e-13
+            },
+            "exact": 18432
+          },
+          "PCHIP + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 5.205358080962891e-10,
+              "0.25": 1.717764579385916e-10,
+              "0.5": 6.393132349941796e-11
+            },
+            "exact": 18432
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.9852826927992128e-08,
+              "0.25": 2.7761856272066544e-08,
+              "0.5": 3.4549024373193275e-08
+            },
+            "exact": 18432
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.995547653272273e-12,
+              "0.25": 2.5722352174120735e-12,
+              "0.5": 1.3514085648785887e-14
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.2141145576896927e-12,
+              "0.25": 3.212261462404961e-12,
+              "0.5": 2.053386414340427e-12
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.6522153263301593e-09,
+              "0.25": 1.1652179385196134e-10,
+              "0.5": 2.155953722886535e-11
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 6.45967741309522e-10,
+              "0.25": 1.959149428266115e-10,
+              "0.5": 5.2142590567598175e-11
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 95.799
+        },
+        "2048": {
+          "Spline uniforme + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 3.998019088035282e-12,
+              "0.25": 3.565906503552215e-13,
+              "0.5": 1.4817317524829575e-13
+            },
+            "exact": 73728
+          },
+          "Spline quantiles + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.5136850681818113e-13,
+              "0.25": 1.246167705996196e-14,
+              "0.5": 5.125033630529426e-15
+            },
+            "exact": 73728
+          },
+          "PCHIP + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 6.63637715838918e-12,
+              "0.25": 1.870794549437727e-13,
+              "0.5": 2.052459311944201e-13
+            },
+            "exact": 73728
+          },
+          "Chebyshev + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 9.37927273844739e-09,
+              "0.25": 1.0941481107751082e-08,
+              "0.5": 1.4737539119797972e-08
+            },
+            "exact": 73728
+          },
+          "Adaptatif + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.1548301598444602e-15,
+              "0.25": 1.1250451693534321e-15,
+              "0.5": 1.960434581860862e-16
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 8.744058985526112e-15,
+              "0.25": 5.980044662546354e-15,
+              "0.5": 9.908691104817917e-15
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 1.8877691323891305e-12,
+              "0.25": 1.1724733133139748e-12,
+              "0.5": 1.769289923225928e-13
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.9358863757703982e-12,
+              "0.25": 3.580414636616883e-13,
+              "0.5": 2.399415581299898e-13
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 310.79
+        }
+      }
+    },
+    "asian_nested": {
+      "reference": {
+        "value": 0.09361668811041518,
+        "uncertainty": 1.662558979376172e-14,
+        "inner_delta": 2.7755575615628914e-17,
+        "kind": "independent tensor quadrature"
+      },
+      "dimension": 2,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Surrogate + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0006514394738345188,
+              "0.25": 2.5322622978192107e-05,
+              "0.5": 3.2648799443605404e-06
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 9.515258181150341e-05,
+              "0.25": 1.793589724535246e-05,
+              "0.5": 2.2478257234302974e-05
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0013912559853784744,
+              "0.25": 5.601434784418015e-06,
+              "0.5": 2.1644004231351025e-06
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0003120303582185452,
+              "0.25": 3.469773606184649e-05,
+              "0.5": 6.287041292007627e-06
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 79.286
+        },
+        "512": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.681120121739659e-06,
+              "0.25": 2.410310823141725e-07,
+              "0.5": 2.5330563919551055e-07
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 4.893693254687395e-07,
+              "0.25": 5.125369402787943e-07,
+              "0.5": 6.513430040284585e-08
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 4.2036202756388003e-07,
+              "0.25": 1.3357903201689563e-07,
+              "0.5": 2.0534663911363755e-07
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.0045770086598123e-06,
+              "0.25": 2.1887672326105326e-07,
+              "0.5": 3.4022344020908606e-07
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 182.768
+        },
+        "2048": {
+          "Surrogate + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 3.323293033396076e-08,
+              "0.25": 5.518585895853108e-09,
+              "0.5": 4.016485294671744e-09
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 5.621809645808769e-09,
+              "0.25": 1.2679297682739379e-08,
+              "0.5": 9.94097007484335e-09
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.0880437035833536e-08,
+              "0.25": 8.936553705459302e-09,
+              "0.5": 4.617640366877067e-09
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 4.518344588538859e-08,
+              "0.25": 6.7473047034200216e-09,
+              "0.5": 6.2995637475335675e-09
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 583.228
+        }
+      }
+    },
+    "interaction_2d": {
+      "reference": {
+        "value": 0.29819727942988733,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 2,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Quadrature": {
+            "sampler": "quad",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gauss-Hermite": {
+            "sampler": "hermite",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.06267899421954563,
+              "0.25": 0.0006993975524723334,
+              "0.5": 0.0007088748942985144
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.017492489423500304,
+              "0.25": 0.001997574292812162,
+              "0.5": 0.0042628632709576925
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.1058955555208735,
+              "0.25": 0.00037306992342619403,
+              "0.5": 0.0014500809467683181
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.026347813545010253,
+              "0.25": 0.0006347302527221442,
+              "0.5": 0.00019417723539279645
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 56.394
+        },
+        "512": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00020548843787060545,
+              "0.25": 9.917916752519912e-05,
+              "0.5": 0.00011455181771189987
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 7.187342256306833e-05,
+              "0.25": 2.30580574852106e-05,
+              "0.5": 2.401792569122273e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.00019379113026596852,
+              "0.25": 0.00032113570604144493,
+              "0.5": 2.6291667708320773e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00031792691335112174,
+              "0.25": 0.000152153992563734,
+              "0.5": 0.00020074824870066268
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 86.787
+        },
+        "2048": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 8.611630448570906e-06,
+              "0.25": 2.3611465705866816e-06,
+              "0.5": 4.1760631300826336e-06
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 3.3506942663162073e-06,
+              "0.25": 1.914629442613198e-06,
+              "0.5": 1.240821446680394e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 3.840103219623631e-05,
+              "0.25": 2.6610411169791655e-06,
+              "0.5": 6.2764819882434985e-06
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 1.1373080765622027e-05,
+              "0.25": 2.1697495747913454e-06,
+              "0.5": 3.2987119490452162e-06
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 215.293
+        }
+      }
+    },
+    "interaction_5d": {
+      "reference": {
+        "value": 0.29819727942988733,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 5,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.002019981028123004,
+              "0.25": 0.0002611550389629746,
+              "0.5": 0.00041987150747646823
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 0.00023095611188968194,
+              "0.25": 0.0008481382866163734,
+              "0.5": 0.0004106994876334332
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0042617277453459645,
+              "0.25": 0.0006318701712276169,
+              "0.5": 0.00022679962722787301
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.0007078167092300984,
+              "0.25": 0.0004796598371038527,
+              "0.5": 0.0005851337008659651
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 76.053
+        },
+        "512": {
+          "Surrogate + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 7.298354387565612e-05,
+              "0.25": 9.635362720253762e-05,
+              "0.5": 0.00015746913287097573
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 5.842826736140847e-05,
+              "0.25": 3.191210499435701e-05,
+              "0.5": 5.415167603219445e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 0.00018578035646818594,
+              "0.25": 0.00022484530711610476,
+              "0.5": 0.0003241294710929889
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00011495833180598809,
+              "0.25": 0.00011290794832028639,
+              "0.5": 0.0001980285136913935
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 92.513
+        },
+        "2048": {
+          "Surrogate + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.4494762540799857e-05,
+              "0.25": 1.7185574923782863e-05,
+              "0.5": 2.5873950163051806e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.120495714871212e-06,
+              "0.25": 2.638001094102142e-05,
+              "0.5": 1.3651371639737165e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 3.2621037364741196e-05,
+              "0.25": 2.7821965828365473e-05,
+              "0.5": 4.0216266293517127e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.0357237929336885e-05,
+              "0.25": 1.3562115377962669e-05,
+              "0.5": 1.8687463025609237e-05
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 159.61
+        }
+      }
+    },
+    "interaction_10d": {
+      "reference": {
+        "value": 0.29819727942988733,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 10,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Surrogate + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.002096537126138399,
+              "0.25": 0.000829315635645617,
+              "0.5": 0.000788439098955717
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 7.116149010880477e-05,
+              "0.25": 0.0006868248564772915,
+              "0.5": 0.0003186808316924843
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0034255130128851936,
+              "0.25": 0.0021987505744991824,
+              "0.5": 0.0010290794269960672
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0024218736882040282,
+              "0.25": 0.0017451136525680549,
+              "0.5": 0.001180434369492103
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 130.635
+        },
+        "512": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 7.893828193747125e-05,
+              "0.25": 5.196099537635335e-05,
+              "0.5": 9.839173286486447e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 2.8138048857026878e-05,
+              "0.25": 8.171346174986964e-05,
+              "0.5": 2.4745457940102435e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.0001461668302515177,
+              "0.25": 8.958400640079801e-05,
+              "0.5": 0.00014729484236190965
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00012055378957871533,
+              "0.25": 7.246699864971455e-05,
+              "0.5": 0.00012584909752206012
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 153.274
+        },
+        "2048": {
+          "Surrogate + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 9.381460352657745e-06,
+              "0.25": 1.649489001916761e-05,
+              "0.5": 1.8393892155497744e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 8.861733458906085e-06,
+              "0.25": 1.124613311523783e-05,
+              "0.5": 1.6969098207323153e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 1.4448524016069094e-05,
+              "0.25": 2.639788445873909e-05,
+              "0.5": 3.0371271111510047e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.742223379612113e-06,
+              "0.25": 1.1077187521660203e-05,
+              "0.5": 9.299147661339326e-06
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 240.792
+        }
+      }
+    },
+    "interaction_20d": {
+      "reference": {
+        "value": 0.29819727942988733,
+        "uncertainty": 0.0,
+        "inner_delta": 0.0,
+        "kind": "analytical"
+      },
+      "dimension": 20,
+      "config": {
+        "128": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": true
+          }
+        },
+        "512": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": true
+          }
+        },
+        "2048": {
+          "MC": {
+            "sampler": "mc",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Stratifié": {
+            "sampler": "strat",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "IS": {
+            "sampler": "is",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Antithétique": {
+            "sampler": "anti",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Sobol": {
+            "sampler": "sobol",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Contrôle polynomial": {
+            "sampler": "mc",
+            "surrogate": "control",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Gaussiennes scindées": {
+            "sampler": "split",
+            "surrogate": "",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate seul": {
+            "sampler": "none",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + MC": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + strat.": {
+            "sampler": "strat",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": false
+          },
+          "Surrogate + IS": {
+            "sampler": "is",
+            "surrogate": "auto",
+            "fraction": 0.25,
+            "audit": false
+          },
+          "Surrogate + Sobol": {
+            "sampler": "sobol",
+            "surrogate": "auto",
+            "fraction": 0.5,
+            "audit": false
+          },
+          "Surrogate + allocation": {
+            "sampler": "mc",
+            "surrogate": "auto",
+            "fraction": 0.125,
+            "audit": true
+          }
+        }
+      },
+      "pilot": {
+        "128": {
+          "Surrogate + MC": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0016315348809377793,
+              "0.25": 0.0016315348809377793,
+              "0.5": 0.0005440643720860895
+            },
+            "exact": 4608
+          },
+          "Surrogate + strat.": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0003656980619511673,
+              "0.25": 0.0003656980619511673,
+              "0.5": 0.0002986944226674578
+            },
+            "exact": 4608
+          },
+          "Surrogate + IS": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.002569876480725221,
+              "0.25": 0.002569876480725221,
+              "0.5": 0.0012320936581708354
+            },
+            "exact": 4608
+          },
+          "Surrogate + allocation": {
+            "selected": 0.5,
+            "pilot_variance": {
+              "0.125": 0.0010410820693811653,
+              "0.25": 0.0010410820693811653,
+              "0.5": 0.0007763983861705828
+            },
+            "exact": 4608
+          },
+          "cpu_ms": 236.308
+        },
+        "512": {
+          "Surrogate + MC": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00010325458044740796,
+              "0.25": 7.41730119161712e-05,
+              "0.5": 8.149589664872817e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + strat.": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 2.6780644723496088e-05,
+              "0.25": 2.1111679395138707e-05,
+              "0.5": 3.9000461833832244e-05
+            },
+            "exact": 18432
+          },
+          "Surrogate + IS": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 9.578923691311963e-05,
+              "0.25": 0.00013098215378034512,
+              "0.5": 0.00011009590178943604
+            },
+            "exact": 18432
+          },
+          "Surrogate + allocation": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 0.00014719406758679547,
+              "0.25": 6.664216348956771e-05,
+              "0.5": 0.00010832064444289757
+            },
+            "exact": 18432
+          },
+          "cpu_ms": 275.096
+        },
+        "2048": {
+          "Surrogate + MC": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 6.202219046683752e-06,
+              "0.25": 8.337981410306973e-06,
+              "0.5": 1.011964443263267e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + strat.": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 4.30793670179228e-06,
+              "0.25": 5.333015988531184e-06,
+              "0.5": 8.965440681333926e-06
+            },
+            "exact": 73728
+          },
+          "Surrogate + IS": {
+            "selected": 0.25,
+            "pilot_variance": {
+              "0.125": 8.276199155941907e-06,
+              "0.25": 7.052913442413389e-06,
+              "0.5": 1.7047734335606413e-05
+            },
+            "exact": 73728
+          },
+          "Surrogate + allocation": {
+            "selected": 0.125,
+            "pilot_variance": {
+              "0.125": 5.98198742791921e-06,
+              "0.25": 1.0125490171121092e-05,
+              "0.5": 1.1364063084980932e-05
+            },
+            "exact": 73728
+          },
+          "cpu_ms": 467.697
+        }
+      }
+    }
+  }
+}

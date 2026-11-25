@@ -1,5 +1,7 @@
 # Réduction du coût de la VaR et de l’ES à 99 %
 
+La campagne sur l’estimation d’espérances se trouve dans [research/REPORT.md](research/REPORT.md).
+
 Le projet compare 15 méthodes sur cinq lois de perte synthétiques. Les portefeuilles d’options sont réévalués en Black–Scholes sous des chocs gaussiens de marché. L’extension à quatre facteurs utilise une corrélation de type AR(1), avec `Corr(i,j) = 0,55^|i−j|`. Les positions sont courtes en puts et en calls, ce qui produit deux queues de pertes. À quatre facteurs, chaque sous-portefeuille dépend de son propre sous-jacent. La perte totale est additive, malgré la corrélation des chocs.
 
 ## Reproduire
